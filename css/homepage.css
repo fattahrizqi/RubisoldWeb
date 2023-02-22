@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 300vh;
+}
+
+.wrapper-menu {
+  position: fixed;
+  display: flex;
+  padding: 1rem 5rem;
+  gap: 4rem;
+  align-items: center;
+}
+
+.wrapper-menu .menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.wrapper-menu .menu a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2b2625;
+  text-decoration: none;
+}
+
+.wrapper-menu .menu .active {
+  color: #33c042;
+  /* border-bottom: 2px solid #33c042; */
+}
+
+.wrapper-menu .menu .active:after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-image: url(../img/underline-menu.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.wrapper-hero {
+  position: relative;
+  background-image: url(../img/background-hero.png);
+  width: 100%;
+  height: 140vh;
+  background-repeat: no-repeat;
+  background-position: top right;
+  display: flex;
+  overflow: hidden;
+}
+
+.wrapper-hero .cloud {
+  position: absolute;
+  z-index: -3;
+  animation: cloudRight 2.5s 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cloudRight {
+  from {
+    top: 97px;
+    left: -800px;
+  }
+  to {
+    top: 97px;
+    left: 140px;
+  }
+}
+
+.wrapper-hero .kota {
+  position: absolute;
+  z-index: -3;
+  animation: kotaLeft 2.5s 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes kotaLeft {
+  from {
+    top: 110px;
+    right: -600px;
+  }
+  to {
+    top: 0;
+    right: 0;
+  }
+}
+
+.wrapper-hero .cta {
+  /* margin-top: -150px; */
+  padding: 17rem 5rem;
+  color: #2b2625;
+}
+
+.wrapper-hero .title {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+}
+
+.wrapper-hero .title .sampah {
+  position: relative;
+  z-index: 1;
+  background-image: url(../img/underline-sampah.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  animation: underline_anime 2s ease-in-out forwards;
+}
+
+@keyframes underline_anime {
+  0% {
+    background-position: -250px bottom;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+.wrapper-hero .title .keuntungan {
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  animation: coverText 5s 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes coverText {
+  from {
+    box-shadow: inset 0px 0px #33c042;
+  }
+  to {
+    box-shadow: inset 1000px 0px #33c042;
+  }
+}
+
+.wrapper-hero .desc {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.wrapper-hero .desc span {
+  color: #33c042;
+}
+
+.wrapper-hero button {
+  all: unset;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  background-image: linear-gradient(to bottom right, #33c042, rgba(35, 196, 52, 0.45));
+  padding: 16px 42px;
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: flex;
+  gap: 1rem;
+}
