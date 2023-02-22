@@ -130,6 +130,7 @@
   animation-fill-mode: forwards;
 }
 
+
 @keyframes coverText {
   from {
     box-shadow: inset 0px 0px #33c042;
@@ -162,4 +163,270 @@
 
   display: flex;
   gap: 1rem;
+}
+
+/* about */
+.wrapper-about{
+  width: 100%;
+  height: 100vh;
+  /* background-color: aliceblue; */
+}
+
+/* divider1 */
+.wrapper-divider1{
+  width: 100%;
+  /* height: 513px; */
+  padding: 10.6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper-divider1 .bg-divider{
+  position: absolute;
+  width: 100%;
+  height: 100% ;
+  object-fit: cover;
+  object-position: left;
+  z-index: -1;
+}
+
+.wrapper-divider1 .wrapper-content{
+  background: linear-gradient(to bottom right, #33C042, rgba(35,196,52,0.45));
+  padding: 2.5rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wrapper-divider1 .right{
+  display: flex;
+  align-items: c;
+}
+
+.wrapper-divider1 .right h3{
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.wrapper-divider1 .pengguna, .wrapper-divider1 .kecamatan, .wrapper-divider1 .provinsi{
+  padding: 0 2rem;
+}
+
+.wrapper-divider1 .kecamatan{
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+/* layanan1 */
+.wrapper-layanan1{
+  position: relative;
+  width: 100%;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+  /* background-color: aliceblue; */
+  padding: 10rem 0 5rem 0;
+  overflow: hidden;
+}
+
+.wrapper-layanan1 .cloud-layanan{
+  position: absolute;
+  top: 0px;
+  z-index: -3;
+  /* animation: cloudAnim2 2.5s 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; */
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+      .cloud-animation2 {
+          animation: cloudAnim2 2.5s 1;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+      }
+  }
+
+  @keyframes cloudAnim2 {
+  from {
+      margin-left: -1400px;
+  }
+  to {
+      margin-left: 0;
+  }
+  }
+
+.wrapper-layanan1 .image{
+  margin-left: -40px;
+}
+
+.wrapper-layanan1 .content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 20px;
+}
+
+.wrapper-layanan1 .content .title{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.wrapper-layanan1 .content .title span{
+  color: #33C042;
+}
+
+.wrapper-layanan1 .content button{
+  all: unset;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  background-image: linear-gradient(to bottom right, #33c042, rgba(35, 196, 52, 0.45));
+  padding: 16px 42px;
+  border-radius: 50px;
+  cursor: pointer;
+  align-self: flex-start;
+
+  display: flex;
+  gap: 1rem;
+}
+
+/* divider2 */
+.wrapper-divider2{
+  width: 100%;
+  /* height: 513px; */
+  padding: 16rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper-divider2 .bg-divider{
+  position: absolute;
+  width: 100%;
+  height: 100% ;
+  object-fit: cover;
+  object-position: right;
+  transform: rotateX(180deg) rotateY(180deg);
+  z-index: -1;
+}
+
+/* unique selling point */
+.wrapper-usp{
+  position: relative;
+  width: 100%;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper-usp .cloud-usp{
+  position: absolute;
+  object-position: center;
+  z-index: -2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cloud-animation3 {
+      animation: cloudAnim3 2.5s 1;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+    }
+}
+
+@keyframes cloudAnim3 {
+  from {
+    margin-left: 2000px;
+  }
+  to {   
+    margin-left: 0;
+  }
+}
+
+.wrapper-usp .quote{
+  padding: 0 .5rem 0 0;
+}
+
+.wrapper-usp .usp-section{
+  padding-top: 2.5rem;
+}
+
+.wrapper-usp .header .title{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.wrapper-usp .header .title span{
+  color: #25DD4D;
+}
+.wrapper-usp .header p{
+  font-size: 18px;
+  margin-bottom: 2.5rem;
+}
+
+.wrapper-usp .content{
+  display: flex;
+}
+.wrapper-usp .content .title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1.25rem;
+}
+.wrapper-usp .content .desc{
+  color: #7C8087;
+}
+
+.wrapper-usp .lapangan .image{
+  display: flex;
+  gap: 2rem;
+}
+.wrapper-usp .lapangan .icon{
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 0 32px 54px rgba(255, 171, 36, .2);
+  margin-bottom: 2.25rem;
+}
+.wrapper-usp .lapangan .arrow{
+  width: fit-content;
+  height: fit-content;
+  padding: 3rem 2rem 0 0;
+}
+
+.wrapper-usp .market .image{
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 4.85rem;
+}
+.wrapper-usp .market .icon{
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 0 32px 54px rgba(52, 191, 224, .2);
+  margin-bottom: 2.25rem;
+}
+.wrapper-usp .market .arrow{
+  width: fit-content;
+  height: fit-content;
+  padding: 2rem 1.5rem .25rem 0;
+}
+
+.wrapper-usp .mudah .image{
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 9rem;
+}
+.wrapper-usp .mudah .icon{
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 0 32px 54px rgba(37, 221, 77, .2);
+  margin-bottom: 2.25rem;
 }

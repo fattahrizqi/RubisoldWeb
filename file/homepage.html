@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="../css/homepage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -22,15 +25,143 @@
           <a href="#">Kontak</a>
         </div>
       </nav>
+
+      <!-- hero -->
       <div class="wrapper-hero">
         <img src="../img/cloud-hero.png" class="cloud" />
         <img src="../img/kota-hero.png" class="kota" />
         <div class="cta">
-          <h1 class="title">Manfaatkan <span class="sampah">Sampah</span><br />Dapatkan <span class="keuntungan">Keuntungan</span></h1>
-          <p class="desc">Ubah sampah dirumahmu<br />menjadi uang dengan <span>RUBI</span>SOLD</p>
+          <h1 class="title">
+            Manfaatkan <span class="sampah">Sampah</span><br />Dapatkan
+            <span class="keuntungan">Keuntungan</span>
+          </h1>
+          <p class="desc">
+            Ubah sampah dirumahmu<br />menjadi uang dengan <span>RUBI</span>SOLD
+          </p>
           <button>Jelajahi<img src="../img/arrow-right.svg" /></button>
         </div>
       </div>
+
+      <div class="wrapper-about"></div>
+      <div class="wrapper-divider1">
+        <img class="bg-divider" src="../img/bg-divider1.png" />
+        <div class="wrapper-content">
+          <div class="left">
+            <p>Telah Digunakan Lebih Dari<br />100K+ Pengguna Di Indonesia</p>
+          </div>
+          <div class="right">
+            <div class="pengguna">
+              <h3>100K+</h3>
+              <p>Pengguna</p>
+            </div>
+            <div class="kecamatan">
+              <h3>1.8K+</h3>
+              <p>Kecamatan</p>
+            </div>
+            <div class="provinsi">
+              <h3>5</h3>
+              <p>Provinsi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper-layanan1">
+        <img src="../img/cloud-layanan1.png" class="cloud-layanan" />
+        <div class="image">
+          <img src="../img/orang-layanan1.png" />
+        </div>
+        <div class="content">
+          <h3 class="title">
+            Fitur <span>Bank Sampah</span> Simple,<br />Cepat, Dan Mudah
+            Digunakan!
+          </h3>
+          <p class="desc">
+            Kamu dapat dengan mudah mengakses Bank Sampah<br />dari ponsel
+            genggam. Pesan kurir kurang dari satu menit<br />dan mereka akan
+            menjemput sampah anda
+          </p>
+          <button>Unduh Sekarang<img src="../img/icon-download.svg" /></button>
+        </div>
+      </div>
+
+      <!-- divider2 -->
+      <div class="wrapper-divider2">
+        <img class="bg-divider" src="../img/bg-divider1.png" />
+      </div>
+
+      <!-- unique selling point -->
+      <div class="wrapper-usp">
+        <img src="../img/cloud-usp.png" class="cloud-usp" />
+        <div class="quote">
+          <img src="../img/quote-mark.svg" />
+        </div>
+        <div class="usp-section">
+          <div class="header">
+            <h1 class="title">
+              Apasih Kelebihan<br />dari <span>Rubi</span>sold?
+            </h1>
+            <p>Berikut kelebihan rubisold</p>
+          </div>
+
+          <div class="content">
+            <div class="lapangan">
+              <div class="image">
+                <img src="../img/icon-lapangan.png" class="icon" />
+                <img src="../img/arrow1.png" class="arrow" />
+              </div>
+              <h3 class="title">Lapangan Pekerjaan</h3>
+              <p class="desc">
+                Kami membuka lapangan pekerjaan<br />untuk siapapun terutama
+                para<br />remaja undergraduate
+              </p>
+            </div>
+
+            <div class="market">
+              <div class="image">
+                <img src="../img/icon-market.png" class="icon" />
+                <img src="../img/arrow2.png" class="arrow" />
+              </div>
+              <h3 class="title">Market Place</h3>
+              <p class="desc">
+                Kami menyediakan fitur marketplace<br />agar pengguna dapat
+                membeli bahan<br />mentah dengan mudah
+              </p>
+            </div>
+
+            <div class="mudah">
+              <div class="image">
+                <img src="../img/icon-mudah.png" class="icon" />
+              </div>
+              <h3 class="title">Mudah Digunakan</h3>
+              <p class="desc">
+                Kami menyediakan kemudahan dalam<br />pemakaian aplikasi maupun
+                website<br />kami
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        // Loop over the entries
+        entries.forEach((entry) => {
+          // If the element is visible
+          if (entry.isIntersecting) {
+            // Add the animation class
+            if (entry.target.classList.contains("cloud-layanan")) {
+              entry.target.classList.add("cloud-animation2");
+            } else if (entry.target.classList.contains("cloud-usp")) {
+              entry.target.classList.add("cloud-animation3");
+            }
+          }
+        });
+      });
+
+      observer.observe(document.querySelector(".cloud-layanan"));
+      observer.observe(document.querySelector(".cloud-usp"));
+    </script>
   </body>
 </html>
