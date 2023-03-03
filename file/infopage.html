@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informasi</title>
+    <link rel="stylesheet" href="../css/infopage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="../script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="wrapper-menu" id="wrapper-menu">
+        <div class="fix-menu">
+          <div class="toggle-menu">
+            <img src="../img/menu.svg" class="hamburger active" />
+            <img src="../img/close.svg" class="close" />
+          </div>
+          <div class="logo">
+            <img
+              onclick="document.location.href='homepage.html'"
+              src="../img/logo.png"
+              class="desk"
+            />
+            <img
+              onclick="document.location.href='homepage.html'"
+              src="../img/logo.svg"
+              class="mobile"
+            />
+          </div>
+        </div>
+
+        <div class="menu">
+          <a href="homepage.html"
+            ><img src="../img/house.svg" class="icon-menu" />Beranda</a
+          >
+          <a class="active" href="infopage.html"
+            ><img src="../img/info-active.svg" class="icon-menu" />Informasi</a
+          >
+          <a href="downloadpage.html"
+            ><img src="../img/download-simple.svg" class="icon-menu" />Unduh
+            Aplikasi
+          </a>
+        </div>
+        <div class="bg-menu"></div>
+      </nav>
+
+      <!-- hero -->
+      <div class="wrapper-hero">
+        <div class="hero-section">
+          <div class="cta">
+            <h1 class="title">
+              Cari Tau Tentang <br />
+              <span class="keuntungan">Rubisold</span> DiSini
+            </h1>
+            <p class="desc">
+              Jelajahi dan kenali tata cara menjaga lingkungan yang baik bersama
+              <span>Rubisold</span>
+            </p>
+            <button>Jelajahi<img src="../img/arrow-right.svg" /></button>
+          </div>
+
+          <div class="bgimg-hero">
+            <!-- <img src="../img/stathero-info.png" class="stat" width="314.23px" /> -->
+            <img src="../img/bghero-info3.png" class="hero" />
+            <img src="../img/bghero-info2.png" class="hero2" />
+          </div>
+        </div>
+      </div>
+
+      <!-- cloud-divider -->
+      <div class="wrapper-cloud-divider">
+        <img src="../img/cloud-divider1.png" />
+      </div>
+
+      <!-- earth -->
+      <div class="wrapper-testimoni2">
+        <div class="content">
+          <div class="testimonial-container" id="testimonial-container"></div>
+          <button id="prev">&lt;</button>
+          <button id="next">&gt;</button>
+        </div>
+        <img src="../img/earth.png" id="earth" />
+      </div>
+
+      <!-- info2 -->
+      <!-- 22 -->
+      <div id="info2-22" class="wrapper-info2 22 th22 active">
+        <div class="wrapper-content">
+          <div class="title">
+            <h3>Pantau <span>Sampah</span> Di Sekitarmu Di Sini</h3>
+            <p>Kami menyediakan data sampah yang akurat untuk anda.</p>
+          </div>
+
+          <div class="info-sampah">
+            <div class="card timbulan">
+              <div class="img">
+                <img src="../img/icon-timbulanSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Timbulan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">18,893,843.32 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card pengurangan">
+              <div class="img">
+                <img src="../img/icon-penguranganSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Pengurangan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">5,002,330.79 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card penanganan">
+              <div class="img">
+                <img src="../img/icon-penangananSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Penanganan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">9,618,785.43 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card tidakTerkelola">
+              <div class="img">
+                <img src="../img/icon-sampahTidakTerkelola.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Sampah Tdk Terkelola</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">4,272,727.10 <span>ton/tahun</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chartJenis">
+            <div class="chart">
+              <h3 class="title">Data Timbulan Sampah</h3>
+              <button id="tahun" class="tahun">
+                2022<img src="../img/caret-down.svg" />
+              </button>
+              <div class="list-tahun">
+                <button class="tahun 21">2021</button>
+                <button class="tahun 20">2020</button>
+                <button class="tahun 19">2019</button>
+                <button class="tahun 18">2018</button>
+              </div>
+              <div class="dg d1"><div class="text">Jakarta</div></div>
+              <div class="dg d2"><div class="text">Jawa Barat</div></div>
+              <div class="dg d3"><div class="text">Jawa Tengah</div></div>
+              <div class="dg d4"><div class="text">Jawa Timur</div></div>
+              <div class="dg d5"><div class="text">Yogyakarta</div></div>
+              <ul class="content">
+                <li><div>7JT</div></li>
+                <li><div>6JT</div></li>
+                <li><div>5JT</div></li>
+                <li><div>4JT</div></li>
+                <li><div>3JT</div></li>
+                <li><div>2JT</div></li>
+                <li><div>1JT</div></li>
+                <li><div>500K</div></li>
+                <li><div>0</div></li>
+              </ul>
+            </div>
+
+            <div class="jenis-sampah">
+              <div class="card">
+                <img src="../img/icon-0.png" class="icon" />
+                <h3 class="title">Kayu</h3>
+                <p class="jumlah">31.59%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-1.png" class="icon" />
+                <h3 class="title">Logam</h3>
+                <p class="jumlah">31.59%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-2.png" class="icon" />
+                <h3 class="title">Plastik</h3>
+                <p class="jumlah">31.59%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-3.png" class="icon" />
+                <h3 class="title">Kertas</h3>
+                <p class="jumlah">31.59%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-4.png" class="icon" />
+                <h3 class="title">Sisa Makan</h3>
+                <p class="jumlah">31.59%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-5.png" class="icon" />
+                <h3 class="title">Kaca</h3>
+                <p class="jumlah">31.59%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-6.png" class="icon" />
+                <h3 class="title">Kain</h3>
+                <p class="jumlah">31.59%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 21 -->
+      <div id="info2-21" class="wrapper-info2 21 th21">
+        <div class="wrapper-content">
+          <div class="title">
+            <h3>Pantau <span>Sampah</span> Di Sekitarmu Di Sini</h3>
+            <p>Kami menyediakan data sampah yang akurat untuk anda.</p>
+          </div>
+
+          <div class="info-sampah">
+            <div class="card timbulan">
+              <div class="img">
+                <img src="../img/icon-timbulanSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Timbulan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">18,893,843.32 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card pengurangan">
+              <div class="img">
+                <img src="../img/icon-penguranganSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Pengurangan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">5,002,330.79 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card penanganan">
+              <div class="img">
+                <img src="../img/icon-penangananSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Penanganan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">9,618,785.43 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card tidakTerkelola">
+              <div class="img">
+                <img src="../img/icon-sampahTidakTerkelola.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Sampah Tdk Terkelola</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">4,272,727.10 <span>ton/tahun</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chartJenis">
+            <div class="chart">
+              <h3 class="title">Data Timbulan Sampah</h3>
+              <button id="tahun" class="tahun">
+                2021<img src="../img/caret-down.svg" />
+              </button>
+              <div class="list-tahun">
+                <button class="tahun 22">2022</button>
+                <button class="tahun 20">2020</button>
+                <button class="tahun 19">2019</button>
+                <button class="tahun 18">2018</button>
+              </div>
+              <div class="dg d1"><div class="text">Jakarta</div></div>
+              <div class="dg d2"><div class="text">Jawa Barat</div></div>
+              <div class="dg d3"><div class="text">Jawa Tengah</div></div>
+              <div class="dg d4"><div class="text">Jawa Timur</div></div>
+              <div class="dg d5"><div class="text">Yogyakarta</div></div>
+              <ul class="content">
+                <li><div>7JT</div></li>
+                <li><div>6JT</div></li>
+                <li><div>5JT</div></li>
+                <li><div>4JT</div></li>
+                <li><div>3JT</div></li>
+                <li><div>2JT</div></li>
+                <li><div>1JT</div></li>
+                <li><div>500K</div></li>
+                <li><div>0</div></li>
+              </ul>
+            </div>
+
+            <div class="jenis-sampah">
+              <div class="card">
+                <img src="../img/icon-0.png" class="icon" />
+                <h3 class="title">Kayu</h3>
+                <p class="jumlah">60.0%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-1.png" class="icon" />
+                <h3 class="title">Logam</h3>
+                <p class="jumlah">1.38%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-2.png" class="icon" />
+                <h3 class="title">Plastik</h3>
+                <p class="jumlah">30.0%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-3.png" class="icon" />
+                <h3 class="title">Kertas</h3>
+                <p class="jumlah">40.0%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-4.png" class="icon" />
+                <h3 class="title">Sisa Makan</h3>
+                <p class="jumlah">70.02%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-5.png" class="icon" />
+                <h3 class="title">Kaca</h3>
+                <p class="jumlah">0.01%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-6.png" class="icon" />
+                <h3 class="title">Kain</h3>
+                <p class="jumlah">2.77%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 20 -->
+      <div id="info2-20" class="wrapper-info2 20 th20">
+        <div class="wrapper-content">
+          <div class="title">
+            <h3>Pantau <span>Sampah</span> Di Sekitarmu Di Sini</h3>
+            <p>Kami menyediakan data sampah yang akurat untuk anda.</p>
+          </div>
+
+          <div class="info-sampah">
+            <div class="card timbulan">
+              <div class="img">
+                <img src="../img/icon-timbulanSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Timbulan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">18,893,843.32 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card pengurangan">
+              <div class="img">
+                <img src="../img/icon-penguranganSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Pengurangan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">5,002,330.79 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card penanganan">
+              <div class="img">
+                <img src="../img/icon-penangananSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Penanganan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">9,618,785.43 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card tidakTerkelola">
+              <div class="img">
+                <img src="../img/icon-sampahTidakTerkelola.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Sampah Tdk Terkelola</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">4,272,727.10 <span>ton/tahun</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chartJenis">
+            <div class="chart">
+              <h3 class="title">Data Timbulan Sampah</h3>
+              <button id="tahun" class="tahun">
+                2020<img src="../img/caret-down.svg" />
+              </button>
+              <div class="list-tahun">
+                <button class="tahun 22">2022</button>
+                <button class="tahun 21">2021</button>
+                <button class="tahun 19">2019</button>
+                <button class="tahun 18">2018</button>
+              </div>
+              <div class="dg d1"><div class="text">Jakarta</div></div>
+              <div class="dg d2"><div class="text">Jawa Barat</div></div>
+              <div class="dg d3"><div class="text">Jawa Tengah</div></div>
+              <div class="dg d4"><div class="text">Jawa Timur</div></div>
+              <div class="dg d5"><div class="text">Yogyakarta</div></div>
+              <ul class="content">
+                <li><div>7JT</div></li>
+                <li><div>6JT</div></li>
+                <li><div>5JT</div></li>
+                <li><div>4JT</div></li>
+                <li><div>3JT</div></li>
+                <li><div>2JT</div></li>
+                <li><div>1JT</div></li>
+                <li><div>500K</div></li>
+                <li><div>0</div></li>
+              </ul>
+            </div>
+
+            <div class="jenis-sampah">
+              <div class="card">
+                <img src="../img/icon-0.png" class="icon" />
+                <h3 class="title">Kayu</h3>
+                <p class="jumlah">5.70%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-1.png" class="icon" />
+                <h3 class="title">Logam</h3>
+                <p class="jumlah">1.49%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-2.png" class="icon" />
+                <h3 class="title">Plastik</h3>
+                <p class="jumlah">2.97%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-3.png" class="icon" />
+                <h3 class="title">Kertas</h3>
+                <p class="jumlah">3.08%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-4.png" class="icon" />
+                <h3 class="title">Sisa Makan</h3>
+                <p class="jumlah">69.77%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-5.png" class="icon" />
+                <h3 class="title">Kaca</h3>
+                <p class="jumlah">0.01%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-6.png" class="icon" />
+                <h3 class="title">Kain</h3>
+                <p class="jumlah">2.99%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 19 -->
+      <div id="info2-19" class="wrapper-info2 19 th19">
+        <div class="wrapper-content">
+          <div class="title">
+            <h3>Pantau <span>Sampah</span> Di Sekitarmu Di Sini</h3>
+            <p>Kami menyediakan data sampah yang akurat untuk anda.</p>
+          </div>
+
+          <div class="info-sampah">
+            <div class="card timbulan">
+              <div class="img">
+                <img src="../img/icon-timbulanSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Timbulan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">18,893,843.32 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card pengurangan">
+              <div class="img">
+                <img src="../img/icon-penguranganSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Pengurangan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">5,002,330.79 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card penanganan">
+              <div class="img">
+                <img src="../img/icon-penangananSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Penanganan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">9,618,785.43 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card tidakTerkelola">
+              <div class="img">
+                <img src="../img/icon-sampahTidakTerkelola.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Sampah Tdk Terkelola</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">4,272,727.10 <span>ton/tahun</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chartJenis">
+            <div class="chart">
+              <h3 class="title">Data Timbulan Sampah</h3>
+              <button id="tahun" class="tahun">
+                2019<img src="../img/caret-down.svg" />
+              </button>
+              <div class="list-tahun">
+                <button class="tahun 22">2022</button>
+                <button class="tahun 21">2021</button>
+                <button class="tahun 20">2020</button>
+                <button class="tahun 18">2018</button>
+              </div>
+              <div class="dg d1"><div class="text">Jakarta</div></div>
+              <div class="dg d2"><div class="text">Jawa Barat</div></div>
+              <div class="dg d3"><div class="text">Jawa Tengah</div></div>
+              <div class="dg d4"><div class="text">Jawa Timur</div></div>
+              <div class="dg d5"><div class="text">Yogyakarta</div></div>
+              <ul class="content">
+                <li><div>7JT</div></li>
+                <li><div>6JT</div></li>
+                <li><div>5JT</div></li>
+                <li><div>4JT</div></li>
+                <li><div>3JT</div></li>
+                <li><div>2JT</div></li>
+                <li><div>1JT</div></li>
+                <li><div>500K</div></li>
+                <li><div>0</div></li>
+              </ul>
+            </div>
+
+            <div class="jenis-sampah">
+              <div class="card">
+                <img src="../img/icon-0.png" class="icon" />
+                <h3 class="title">Kayu</h3>
+                <p class="jumlah">2.97%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-1.png" class="icon" />
+                <h3 class="title">Logam</h3>
+                <p class="jumlah">0.08%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-2.png" class="icon" />
+                <h3 class="title">Plastik</h3>
+                <p class="jumlah">0.90%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-3.png" class="icon" />
+                <h3 class="title">Kertas</h3>
+                <p class="jumlah">0.18%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-4.png" class="icon" />
+                <h3 class="title">Sisa Makan</h3>
+                <p class="jumlah">23.02%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-5.png" class="icon" />
+                <h3 class="title">Kaca</h3>
+                <p class="jumlah">0.65%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-6.png" class="icon" />
+                <h3 class="title">Kain</h3>
+                <p class="jumlah">1.27%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 18 -->
+      <div id="info2-18" class="wrapper-info2 18 th18">
+        <div class="wrapper-content">
+          <div class="title">
+            <h3>Pantau <span>Sampah</span> Di Sekitarmu Di Sini</h3>
+            <p>Kami menyediakan data sampah yang akurat untuk anda.</p>
+          </div>
+
+          <div class="info-sampah">
+            <div class="card timbulan">
+              <div class="img">
+                <img src="../img/icon-timbulanSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Timbulan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">18,893,843.32 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card pengurangan">
+              <div class="img">
+                <img src="../img/icon-penguranganSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Pengurangan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">5,002,330.79 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card penanganan">
+              <div class="img">
+                <img src="../img/icon-penangananSampah.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Penanganan Sampah</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">9,618,785.43 <span>ton/tahun</span></div>
+              </div>
+            </div>
+            <div class="card tidakTerkelola">
+              <div class="img">
+                <img src="../img/icon-sampahTidakTerkelola.png" />
+              </div>
+              <div class="desc">
+                <h3 class="title">Sampah Tdk Terkelola</h3>
+                <p class="waktu">Indonesia - 2023</p>
+                <div class="jumlah">4,272,727.10 <span>ton/tahun</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chartJenis">
+            <div class="chart">
+              <h3 class="title">Data Timbulan Sampah</h3>
+              <button id="tahun" class="tahun">
+                2018<img src="../img/caret-down.svg" />
+              </button>
+              <div class="list-tahun">
+                <button class="tahun 22">2022</button>
+                <button class="tahun 21">2021</button>
+                <button class="tahun 20">2020</button>
+                <button class="tahun 19">2019</button>
+              </div>
+              <div class="dg d1"><div class="text">Jakarta</div></div>
+              <div class="dg d2"><div class="text">Jawa Barat</div></div>
+              <div class="dg d3"><div class="text">Jawa Tengah</div></div>
+              <div class="dg d4"><div class="text">Jawa Timur</div></div>
+              <div class="dg d5"><div class="text">Yogyakarta</div></div>
+              <ul class="content">
+                <li><div>7JT</div></li>
+                <li><div>6JT</div></li>
+                <li><div>5JT</div></li>
+                <li><div>4JT</div></li>
+                <li><div>3JT</div></li>
+                <li><div>2JT</div></li>
+                <li><div>1JT</div></li>
+                <li><div>500K</div></li>
+                <li><div>0</div></li>
+              </ul>
+            </div>
+
+            <div class="jenis-sampah">
+              <div class="card">
+                <img src="../img/icon-0.png" class="icon" />
+                <h3 class="title">Kayu</h3>
+                <p class="jumlah">2.70%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-1.png" class="icon" />
+                <h3 class="title">Logam</h3>
+                <p class="jumlah">0.10%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-2.png" class="icon" />
+                <h3 class="title">Plastik</h3>
+                <p class="jumlah">1.00%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-3.png" class="icon" />
+                <h3 class="title">Kertas</h3>
+                <p class="jumlah">0.10%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-4.png" class="icon" />
+                <h3 class="title">Sisa Makan</h3>
+                <p class="jumlah">22.48%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-5.png" class="icon" />
+                <h3 class="title">Kaca</h3>
+                <p class="jumlah">0.70%</p>
+              </div>
+              <div class="card">
+                <img src="../img/icon-6.png" class="icon" />
+                <h3 class="title">Kain</h3>
+                <p class="jumlah">1.30%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- info3 -->
+      <div class="wrapper-info3"></div>
+
+      <!-- artikel -->
+      <div class="wrapper-artikel">
+        <div class="berita">
+          <div class="berita-terbaru">
+            <h1 class="title"><span>Berita Terbaru</span> Kami</h1>
+            <p class="sub-title">
+              Temukan berbagai artikel dan berita bermanfaat disini. Update
+              terus info dan event terbaru tentang kami jangan sampai kelewatan
+              !
+            </p>
+            <div class="card">
+              <div class="text">
+                <!-- <img src="../img/aksen-detail-berita-card.png" alt="" class="img-aksen"> -->
+                <h3 class="title">
+                  5 Kerajinan tangan yang harus kamu coba di rumah !
+                </h3>
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button>Baca Selengkapnya</button>
+              </div>
+              <div class="image">
+                <img src="../img/img-5kerajinan.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="berita-tren">
+            <h1 class="title">Berita Yang <span>Sedang Tren</span></h1>
+            <div class="wrapper-cards">
+              <div class="card">
+                <div class="image">
+                  <img src="../img/img-card-beritaTren.png" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="title">
+                    Sampah Jakarta alami kenaikan selama 5 tahun berturut turut
+                    ini penyebabnya . . .
+                  </h3>
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt labore et dolore . . .
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="../img/img-card-beritaTren2.png" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="title">
+                    Prediksi jumlah volume sampah Jakarta pada tahun 2023 - 2024
+                  </h3>
+                  <p class="desc">
+                    Menurut data Kementrian Lingkungan Hidup & Kehutanan atau (
+                    KLHK ) jumlah sampah di Jakarta sa . . .
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="../img/img-card-beritaTren3.png" alt="" />
+                </div>
+                <div class="text">
+                  <h3 class="title">
+                    Penanggulangan sampah yang dianjurkan oleh Pemerintah
+                  </h3>
+                  <p class="desc">
+                    Pemerintah menghimbau kepada masyarakat bahwa sanya
+                    permasalahan sampah ini adalah tanggung jaw . . .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="topik-hangat">
+          <div class="top">
+            <h1 class="title">Cari Topik Hangat</h1>
+            <div class="filter">
+              <button class="btn-filter" onclick="filterCards(this,'daurUlang')">Daur Ulang</button>
+              <button class="btn-filter" onclick="filterCards(this, 'sampah')">Sampah</button>
+              <button class="btn-filter" onclick="filterCards(this, 'event')">Event</button>
+              <button class="btn-filter" onclick="filterCards(this, 'kerajinan')">Kerajinan</button>
+              <button class="btn-filter" onclick="filterCards(this, 'rubisold')">Rubisold</button>
+              <button class="btn-filter" onclick="filterCards(this, 'dribis')">Dribis</button>
+              <button class="btn-filter" onclick="filterCards(this, 'promo')">Promo</button>
+              <button class="btn-filter" onclick="filterCards(this, 'diy')">DIY</button>
+            </div>
+          </div>
+          <div class="wrapper-cards">
+            <div class="card-artikel daurUlang">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                daur Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel daurUlang">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                daur Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel daurUlang">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                daur Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel sampah">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                sampah cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel event">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                event Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel rubisold">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                rubisold Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel kerajinan">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                kerajinan Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel dribis">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                dribis Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel daurUlang">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                daur Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel sampah">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                sampah cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel event">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                event Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel rubisold">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                rubisold Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel kerajinan">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                kerajinan Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel dribis">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                dribis Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+          </div>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
