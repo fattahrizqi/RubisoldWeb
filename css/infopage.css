@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -503,6 +504,7 @@
   /* box-shadow: 0 0 1em rgba(1, 17, 39, 0.25); */
   cursor: pointer;
   border-radius: 50%;
+  z-index: 3;
 }
 button#next {
   right: -4em;
@@ -533,7 +535,7 @@ button#prev {
 .wrapper-testimoni2 #earth {
   /* position: absolute; */
   width: 1400px;
-  margin: 60px 0 auto;
+  margin: -40px 0 auto;
   transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width: 900px) {
@@ -1082,7 +1084,7 @@ button#prev {
 }
 
 /* info3 */
-.wrapper-info3 {
+/* .wrapper-info3 {
   height: 100vh;
 
   margin-top: 1rem;
@@ -1385,7 +1387,7 @@ button#prev {
 
 .swiper-slide {
   transition: 0.5s linear;
-}
+} */
 
 /* artikel */
 .wrapper-artikel {
@@ -1393,6 +1395,7 @@ button#prev {
   box-sizing: border-box;
   max-width: 1700px;
   margin: auto;
+  margin-top: -15rem;
   padding: 5rem;
   /* background-color: skyblue; */
 }
@@ -1450,6 +1453,9 @@ button#prev {
   color: white;
   margin: 0;
 }
+.wrapper-artikel .berita-terbaru .card .text a{
+  text-decoration: none;
+}
 .wrapper-artikel .berita-terbaru .card .text button {
   all: unset;
   padding: 10px 24px;
@@ -1490,6 +1496,7 @@ button#prev {
   border: 1px solid rgba(107, 106, 88, 0.3);
   border-radius: 15px;
   gap: 12px;
+  cursor: pointer;
 }
 .wrapper-artikel .berita-tren .wrapper-cards .card .image {
   flex: 1;
@@ -1595,6 +1602,7 @@ button#prev {
   color: white;
   background-color: #33c042;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 /* .wrapper-artikel .topik-hangat .wrapper-cards .button{
@@ -1640,6 +1648,7 @@ button#prev {
 @media screen and (max-width: 850px) {
   .wrapper-artikel {
     padding: 0 3rem;
+    margin-top: -5rem;
     border-radius: 100px;
   }
 
@@ -1695,3 +1704,147 @@ button#prev {
     gap: 1rem;
   }
 }
+
+/* start footer */
+
+footer {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  /* margin-left: -80px; */
+  padding: 50px 0px;
+  background-image: url("../img/wavefooter.svg");
+  background-size: cover;
+}
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .logo img {
+  width: 180px;
+}
+
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #000;
+  font-size: 18px;
+}
+
+.box__footer h2 {
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 700;
+}
+
+.box__footer a {
+  margin-top: 10px;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.box__footer a:hover {
+  opacity: 0.8;
+  color: #00dbd0;
+}
+
+.box__footer a .fab {
+  font-size: 20px;
+}
+
+.box__footer hr {
+  width: 70%;
+  border: none;
+  height: 2px;
+  background-color: #00dbd0;
+}
+
+.footer-col {
+  /* width: 25%; */
+  padding: 0 30px;
+  margin-top: 38px;
+}
+
+.footer-col .title-medsos {
+  margin-bottom: 10px;
+}
+
+.footer-col .hr-footer {
+  width: 30%;
+  border: none;
+  height: 1px;
+  background-color: #00dbd0;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #000;
+  text-decoration: none;
+  font-weight: 300;
+  color: #000;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #00dbd0;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
+  margin-top: 20px;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #00dbd0;
+}
+
+@media (max-width: 850px) {
+  footer{
+    margin-left: -48px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  footer{
+    margin-left: -22px;
+  }
+}
+/* end footer */

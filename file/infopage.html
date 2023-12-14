@@ -70,7 +70,7 @@
               Jelajahi dan kenali tata cara menjaga lingkungan yang baik bersama
               <span>Rubisold</span>
             </p>
-            <button>Jelajahi<img src="../img/arrow-right.svg" /></button>
+            <button onclick="window.location.href='#start'">Jelajahi<img src="../img/arrow-right.svg" /></button>
           </div>
 
           <div class="bgimg-hero">
@@ -87,13 +87,13 @@
       </div>
 
       <!-- earth -->
-      <div class="wrapper-testimoni2">
+      <div  id="start" class="wrapper-testimoni2">
         <div class="content">
           <div class="testimonial-container" id="testimonial-container"></div>
           <button id="prev">&lt;</button>
           <button id="next">&gt;</button>
         </div>
-        <img src="../img/earth.png" id="earth" />
+        <img src="../img/bumibro 1 (1).png" id="earth" />
       </div>
 
       <!-- info2 -->
@@ -704,7 +704,7 @@
       </div>
 
       <!-- info3 -->
-      <div class="wrapper-info3">
+      <!-- <div class="wrapper-info3">
       <div class="title-info3">
             <h4>Sampah Yang <span>Dapat Dijual</span></h4>
             <p>Saat ini kami telah menerima 4 jenis sampah</p>
@@ -795,7 +795,7 @@
     </div>
       </div>
         </div>
-        </div>
+        </div> -->
 
       <!-- artikel -->
       <div class="wrapper-artikel">
@@ -828,7 +828,7 @@
           <div class="berita-tren">
             <h1 class="title">Berita Yang <span>Sedang Tren</span></h1>
             <div class="wrapper-cards">
-              <div class="card">
+              <div class="card" onclick="window.location.href='artikel.html'">
                 <div class="image">
                   <img src="../img/img-card-beritaTren.png" alt="" />
                 </div>
@@ -843,7 +843,7 @@
                   </p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" onclick="window.location.href='artikel.html'">
                 <div class="image">
                   <img src="../img/img-card-beritaTren2.png" alt="" />
                 </div>
@@ -857,7 +857,7 @@
                   </p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" onclick="window.location.href='artikel.html'">
                 <div class="image">
                   <img src="../img/img-card-beritaTren3.png" alt="" />
                 </div>
@@ -880,12 +880,10 @@
             <h1 class="title">Cari Topik Hangat</h1>
             <div class="filter">
               <button class="btn-filter" onclick="filterCards(this,'daurUlang')">Daur Ulang</button>
-              <button class="btn-filter" onclick="filterCards(this, 'sampah')">Sampah</button>
               <button class="btn-filter" onclick="filterCards(this, 'event')">Event</button>
-              <button class="btn-filter" onclick="filterCards(this, 'kerajinan')">Kerajinan</button>
-              <button class="btn-filter" onclick="filterCards(this, 'rubisold')">Rubisold</button>
+              <button class="btn-filter" onclick="filterCards(this, 'lingkungan')">Lingkungan</button>
               <button class="btn-filter" onclick="filterCards(this, 'dribis')">Dribis</button>
-              <button class="btn-filter" onclick="filterCards(this, 'promo')">Promo</button>
+              <!-- <button class="btn-filter" onclick="filterCards(this, 'promo')">Promo</button> -->
               <button class="btn-filter" onclick="filterCards(this, 'diy')">DIY</button>
             </div>
           </div>
@@ -895,7 +893,7 @@
                 <img src="../img/img-card-topik1.png" alt="" />
               </div>
               <h3 class="title">
-                daur Cara membuat bunga dari sedotan dengan mudah
+                Cara membuat bunga dari sedotan dengan mudah
               </h3>
               <p class="desc">
                 Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
@@ -905,23 +903,36 @@
             </div>
             <div class="card-artikel daurUlang">
               <div class="image">
-                <img src="../img/img-card-topik1.png" alt="" />
+                <img src="../img/Rectangle 260.png" alt="" />
               </div>
               <h3 class="title">
-                daur Cara membuat bunga dari sedotan dengan mudah
+                Cara membuat pot bunga dari botol plastik dengan mudah 
               </h3>
               <p class="desc">
-                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
-                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+                Botol plastik cuma bisa dibuang ? Mending dibuat jadi pot bunga atau tempat pensil, mau tau caranya ? Yuk ikuti langkah - lang. . .
               </p>
               <button href="../file/artikel.html">Baca Selengkapnya</button>
             </div>
+
             <div class="card-artikel daurUlang">
+              <div class="image">
+                <img src="../img/Rectangle 260 (1).png" alt="" />
+              </div>
+              <h3 class="title">
+                Cara membuat celengan anak dari kardus dengan mudah 
+              </h3>
+              <p class="desc">
+                Mau ajarkan anak menabung dan hemat  sejak dini ? Tapi tidak punya celengan ? Mudah, yuk buat celengan dari kardus. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+
+            <div class="card-artikel sampah">
               <div class="image">
                 <img src="../img/img-card-topik1.png" alt="" />
               </div>
               <h3 class="title">
-                daur Cara membuat bunga dari sedotan dengan mudah
+                cara membuat bunga dari sedotan dengan mudah
               </h3>
               <p class="desc">
                 Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
@@ -929,6 +940,156 @@
               </p>
               <button>Baca Selengkapnya</button>
             </div>
+            <div class="card-artikel event">
+              <div class="image">
+                <img src="../img/Frame 163080.png" alt="" />
+              </div>
+              <h3 class="title">
+                Rubis Challenge
+              </h3>
+              <p class="desc">
+                Ayo kerjain misi harian dari Rubisold dan dapatkan voucher gopay senilai ratusan ribu rupiah sekarang.
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel event">
+              <div class="image">
+                <img src="../img/Frame 163081.png" alt="" />
+              </div>
+              <h3 class="title">
+                Ramadhan Give
+              </h3>
+              <p class="desc">
+                Yuk ikut kerja bakti, agar membuat lingkungan tetap bersih di bulan yang suci, lalu dapatkan voucher THR
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel event">
+              <div class="image">
+                <img src="../img/Frame 163081 (1).png" alt="" />
+              </div>
+              <h3 class="title">
+                Rubis Store
+              </h3>
+              <p class="desc">
+                Yuk datang dan meriahkan Rubis store, dapatkan karya seni indah sesuai selera mu dengan harga terjangkau
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+
+            <div class="card-artikel lingkungan">
+              <div class="image">
+                <img src="../img/Lngkn (1).png" alt="" />
+              </div>
+              <h3 class="title">
+                Warga banjar tolak pembangunan TPS 3R
+              </h3>
+              <p class="desc">
+                Perbekel Sembung mengakui warga Banjar Tegal menyatakan menolak pembangunan TPS 3R sejak dua bulan lalu.
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+
+            <div class="card-artikel lingkungan">
+              <div class="image">
+                <img src="../img/Lngkn (2).png" alt="" />
+              </div>
+              <h3 class="title">
+                Bandung akui tangani sampah di TPST belum optimal
+              </h3>
+              <p class="desc">
+                Bandung mengakui penanganan sampah belum optimal di TPST menjelang TPA Suwung akan ditutup pada Maret 2023.
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+
+            <div class="card-artikel lingkungan">
+              <div class="image">
+                <img src="../img/Lngkn (3).png" alt="" />
+              </div>
+              <h3 class="title">
+                Dampak bakar sampah di jabodetabek setara dengan
+              </h3>
+              <p class="desc">
+                Dampak bakar sampah di ruang terbuka di Jabodetabek ternyata nyaris setara dengan kebakaran hutan di Kalimantan pada 2021.
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel lingkungan">
+              <div class="image">
+                <img src="../img/Lngkn (4).png" alt="" />
+              </div>
+              <h3 class="title">
+                Ngeyel! bisa denda Rp 500 Ribu, tetap ada yang nyampah.
+              </h3>
+              <p class="desc">
+                Pembuang sampah di jembatan Besole ruas jalan Jogja-Solo, Ceper, Klaten, masih nekat. Meski sudah ada spanduk ancaman denda.
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel kerajinan">
+              <div class="image">
+                <img src="../img/img-card-topik1.png" alt="" />
+              </div>
+              <h3 class="title">
+                kerajinan Cara membuat bunga dari sedotan dengan mudah
+              </h3>
+              <p class="desc">
+                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
+                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel dribis">
+              <div class="image">
+                <img src="../img/drbs (3).png" alt="" />
+              </div>
+              <h3 class="title">
+                Kini anak SMA bisa daftar jadi kurir Dribis loh
+              </h3>
+              <p class="desc">
+                Pada tanggal 3 Januari Nasywa Zahra selaku CEO Rubisold mengatakan bahwa lowongan pekerjaan Dribis tidak memerlukan batas 17...
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel dribis">
+              <div class="image">
+                <img src="../img/drbs (1).png" alt="" />
+              </div>
+              <h3 class="title">
+                Info loker untuk para kurir truk nih. Dribis buka lowongan untuk..
+              </h3>
+              <p class="desc">
+                Tak hanya motor dan sepeda kini Dribis buka lowongan untuk para kurir truk. Catat syarat pendaftaranya dan tanggal tutup sekarang.
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+            <div class="card-artikel dribis">
+              <div class="image">
+                <img src="../img/drbs (2).png" alt="" />
+              </div>
+              <h3 class="title">
+                Rubisold buka lowongan kurir sampah ini syaratnya !
+              </h3>
+              <p class="desc">
+                Mulai dari bulan januari 2023 hingga akhir juli 2023 Rubisold kini buka peluang pekerjaan untuk para undergraduate !. Cek syaratnya
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+
+            <div class="card-artikel daurUlang">
+              <div class="image">
+                <img src="../img/Rectangle 260 (2).png" alt="" />
+              </div>
+              <h3 class="title">
+                Cara membuat rumah - rumahan dari koran dengan mudah 
+              </h3>
+              <p class="desc">
+                Si kecil dapat tugas untuk membuat kerajinan ? Tapi bingung mau buat apa ? Dibuat jadi rumah - rumahan aja, yuk ikuti. . .
+              </p>
+              <button>Baca Selengkapnya</button>
+            </div>
+
             <div class="card-artikel sampah">
               <div class="image">
                 <img src="../img/img-card-topik1.png" alt="" />
@@ -944,14 +1105,13 @@
             </div>
             <div class="card-artikel event">
               <div class="image">
-                <img src="../img/img-card-topik1.png" alt="" />
+                <img src="../img/Frame 163080 (1).png" alt="" />
               </div>
               <h3 class="title">
-                event Cara membuat bunga dari sedotan dengan mudah
+                Voucher 3.3
               </h3>
               <p class="desc">
-                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
-                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+                Ikuti Event ini dan dapatkan voucher keberuntungan mu secara gratis untuk gandakan koin dari hasil penjualan mu
               </p>
               <button>Baca Selengkapnya</button>
             </div>
@@ -983,92 +1143,62 @@
             </div>
             <div class="card-artikel dribis">
               <div class="image">
-                <img src="../img/img-card-topik1.png" alt="" />
+                <img src="../img/Rectangle 260 (3).png" alt="" />
               </div>
               <h3 class="title">
-                dribis Cara membuat bunga dari sedotan dengan mudah
+                Dribis buka lowongan untuk para kurir sepeda.
               </h3>
               <p class="desc">
-                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
-                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+                Gak perlu motor !!. Kamu hanya perlu siapkan sepeda untuk mendaftra menjadi kurir Dribis. Nikmati penghasilan tambahan tanpa..
               </p>
               <button>Baca Selengkapnya</button>
             </div>
-            <div class="card-artikel daurUlang">
+            <!-- diy -->
+            <div class="card-artikel diy">
               <div class="image">
-                <img src="../img/img-card-topik1.png" alt="" />
+                <img src="../img/Rectangle 260 (4).png" alt="" />
               </div>
               <h3 class="title">
-                daur Cara membuat bunga dari sedotan dengan mudah
+                Top 20 DIY Botol Plastik termudah untuk dibuat di rumah
               </h3>
               <p class="desc">
-                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
-                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+                Daripada dibuang, kamu bisa mengolah botol plastik menjadi barang yang bakal berguna. Bahkan, untuk membuat DIY ini hanya perlu ...
               </p>
               <button>Baca Selengkapnya</button>
             </div>
-            <div class="card-artikel sampah">
+            <div class="card-artikel diy">
               <div class="image">
-                <img src="../img/img-card-topik1.png" alt="" />
+                <img src="../img/Rectangle 260 (5).png" alt="" />
               </div>
               <h3 class="title">
-                sampah cara membuat bunga dari sedotan dengan mudah
+                Punya kain bekas ? Jangan dibuang ternyata bisa bernilai lo
               </h3>
               <p class="desc">
-                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
-                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+                Kain perca adalah salah satu bahan kerajinan tangan yang paling mudah didapat. Banyak sekali contoh benda yang bisa dibuat dari . . .
               </p>
               <button>Baca Selengkapnya</button>
             </div>
-            <div class="card-artikel event">
+            <div class="card-artikel diy">
               <div class="image">
-                <img src="../img/img-card-topik1.png" alt="" />
+                <img src="../img/Rectangle 260 (6).png" alt="" />
               </div>
               <h3 class="title">
-                event Cara membuat bunga dari sedotan dengan mudah
+                15 Craft Cantik & Berguna yang Cuma Berbahan Kertas Koran!
               </h3>
               <p class="desc">
-                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
-                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+                Hampir bisa dipastikan kita pasti punya koran, tabloid, atau majalah bekas di dalam rumah. Sayangnya setelah selesai dibaca . . .
               </p>
               <button>Baca Selengkapnya</button>
             </div>
-            <div class="card-artikel rubisold">
+            <div class="card-artikel diy">
               <div class="image">
-                <img src="../img/img-card-topik1.png" alt="" />
+                <img src="../img/Rectangle 260 (7).png" alt="" />
               </div>
               <h3 class="title">
-                rubisold Cara membuat bunga dari sedotan dengan mudah
+                17 Cara kreatif memanfaatkan kaleng susu bekas untuk hiasan.
               </h3>
               <p class="desc">
-                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
-                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
-              </p>
-              <button>Baca Selengkapnya</button>
-            </div>
-            <div class="card-artikel kerajinan">
-              <div class="image">
-                <img src="../img/img-card-topik1.png" alt="" />
-              </div>
-              <h3 class="title">
-                kerajinan Cara membuat bunga dari sedotan dengan mudah
-              </h3>
-              <p class="desc">
-                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
-                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
-              </p>
-              <button>Baca Selengkapnya</button>
-            </div>
-            <div class="card-artikel dribis">
-              <div class="image">
-                <img src="../img/img-card-topik1.png" alt="" />
-              </div>
-              <h3 class="title">
-                dribis Cara membuat bunga dari sedotan dengan mudah
-              </h3>
-              <p class="desc">
-                Punya sedotan bekas di rumah ? Jangan dibuang !!. Mending dibuat
-                kerajinan untuk menambah aksesoris rumah, yuk ikuti cara. . .
+                Untuk mendapatkan hiasan rumah cantik tidak selalu butuh modal besar. Tapi sebagai gantinya, kamu bisa menggunakan kaleng . . .
               </p>
               <button>Baca Selengkapnya</button>
             </div>
@@ -1076,6 +1206,50 @@
 
         
       </div>
+
+      <!-- start footer -->
+      <footer>
+        <div class="container__footer">
+          <div class="box__footer">
+            <div class="logo">
+              <img src="../img/logoo.svg" alt="" />
+            </div>
+            <div class="terms">
+              <p>Aplikasi layanan bank sampah nomer satu di Indonesia.</p>
+              <br />
+              <p>© Copyright Rubisold 2023</p>
+            </div>
+          </div>
+          <div class="box__footer">
+            <h2>Informasi</h2>
+            <hr />
+            <a href="#">Layanan</a>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Unduh</a>
+            <a href="#">Pantau Sampah</a>
+          </div>
+
+          <div class="box__footer">
+            <h2>Lainnya</h2>
+            <hr />
+            <a href="#">Jenis Sampah</a>
+            <a href="#">Artikel</a>
+            <a href="#">Event Kami</a>
+          </div>
+
+          <div class="footer-col">
+            <h2 class="title-medsos">Media Sosial</h2>
+            <hr class="hr-footer" />
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
       
     </div>
 

@@ -30,7 +30,7 @@
     <script src="../script/script.js" defer></script>
   </head>
   <body>
-    
+    <div class="container">
       <nav class="wrapper-menu" id="wrapper-menu">
         <div class="fix-menu">
           <div class="toggle-menu">
@@ -53,10 +53,10 @@
 
         <div class="menu">
           <a class="active" href="homepage.html"
-            ><img src="../img/house.svg" class="icon-menu" />Beranda</a
+            ><img src="../img/house-active.svg" class="icon-menu" />Beranda</a
           >
           <a href="infopage.html"
-            ><img src="../img/info-active.svg" class="icon-menu" />Informasi</a
+            ><img src="../img/info.svg" class="icon-menu" />Informasi</a
           >
           <a href="downloadpage.html"
             ><img src="../img/download-simple.svg" class="icon-menu" />Unduh
@@ -78,7 +78,7 @@
           <p class="desc">
             Ubah sampah dirumahmu<br />menjadi uang dengan <span>RUBI</span>SOLD
           </p>
-          <button>Jelajahi<img src="../img/arrow-right.svg" /></button>
+          <button onclick="window.location.href='infopage.html'">Jelajahi<img src="../img/arrow-right.svg" /></button>
         </div>
       </div>
 
@@ -143,7 +143,7 @@
             Pesan kurir kurang dari satu menit dan mereka akan menjemput sampah
             anda
           </p>
-          <button>Unduh Sekarang<img src="../img/icon-download.svg" /></button>
+          <button onclick="window.location.href='downloadpage.html'">Unduh Sekarang<img src="../img/icon-download.svg" /></button>
         </div>
       </div>
 
@@ -205,17 +205,15 @@
 
       <!-- Start Layanan 2 -->
       <div class="wrapper-layanan2">
-        <img src="../img/cloud-layanan2.png" class="cloud-layanan" />
+        <img src="../img/cloud-layanan2.png" class="cloud-layanan2" />
         <div class="content">
           <h3 class="title">
-            Fitur <span>Bank Sampah</span> Simple, Cepat, Dan Mudah Digunakan!
+            Bingung Cari Kerjaan ? </br>Yuk Daftar Jadi Kurir Kami !
           </h3>
           <p class="desc">
-            Kamu dapat dengan mudah mengakses Bank Sampah dari ponsel genggam.
-            Pesan kurir kurang dari satu menit dan mereka akan menjemput sampah
-            anda
+            Kami membuka lapangan pekerjaan untuk para masyarakat dengan latar pendidikan rendah. Cukup dengan mengunduh aplikasi <span>DRIBIS</span> dan lengkapi berkas kamu tunggu verifikasi paling lambat 3 hari. 
           </p>
-          <button>Unduh Sekarang<img src="../img/icon-download.svg" /></button>
+          <button onclick="window.location.href='downloadpage.html'">Unduh Sekarang<img src="../img/icon-download.svg" /></button>
         </div>
         <div class="image">
           <img src="../img/orang-layanan2.png" />
@@ -428,6 +426,8 @@
               entry.target.classList.add("cloud-animation2");
             } else if (entry.target.classList.contains("cloud-usp")) {
               entry.target.classList.add("cloud-animation3");
+            } else if (entry.target.classList.contains("cloud-layanan2")) {
+              entry.target.classList.add("cloud-animation4");
             }
           }
         });
@@ -435,6 +435,7 @@
 
       observer.observe(document.querySelector(".cloud-layanan"));
       observer.observe(document.querySelector(".cloud-usp"));
+      observer.observe(document.querySelector(".cloud-layanan2"));
     </script>
 
     <!-- Swiper JS -->

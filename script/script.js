@@ -53,12 +53,7 @@ const testimonials = [
   {
     kota: "Jakarta",
     button: "#",
-    desc: "Pada tahun 2021, volume sampah di Jakarta mencapai 3,08 juta ton dan pada tahun 2022 meningkat sampai 3,11 juta ton. Hal ini dikarenakan kurangnya kesadaran masyarakat dalam mengolah sampah",
-  },
-  {
-    kota: "Jawa Timur",
-    button: "#",
-    desc: "Pada tahun 2021, volume sampah di Jawa Timur mencapai 1,28 juta ton dan pada tahun 2022 meningkat sampai 1,48 juta ton. Hal ini dikarenakan kurangnya kesadaran masyarakat dalam mengolah sampah",
+    desc: "Pada tahun 2021, volume sampah di Jakarta mencapai 3,08 juta ton dan pada tahun 2022 meningkat sampai 3,11 juta ton. Hal ini dikarenakan rendahnya keseriusan pemerintah maupun masyarakat dalam mengelola sampah ",
   },
   {
     kota: "Jawa Barat",
@@ -69,6 +64,16 @@ const testimonials = [
     kota: "Jawa Tengah",
     button: "#",
     desc: "Pada tahun 2021, volume sampah di Jawa Tengah mencapai 4,89 juta ton dan pada tahun 2022 meningkat sampai 6 juta ton. Hal ini dikarenakan kurangnya kesadaran masyarakat dalam mengolah sampah",
+  },
+  {
+    kota: "Jawa Timur",
+    button: "#",
+    desc: "Pada tahun 2021, volume sampah di Jawa Timur mencapai 1,28 juta ton dan pada tahun 2022 meningkat sampai 1,48 juta ton. Hal ini dikarenakan kurangnya kesadaran masyarakat dalam mengolah sampah",
+  },
+  {
+    kota: "DI Yogyakarta",
+    button: "#",
+    desc: "Pada tahun 2021, volume sampah di Yogyakarta mencapai 1 juta ton dan pada tahun 2022 meningkat sampai 1,13 juta ton. Hal ini dikarenakan kurangnya kesadaran masyarakat dalam mengolah sampah"
   },
 ];
 
@@ -97,9 +102,9 @@ prevBtn.addEventListener("click", () => {
 
 let controlEarth = (e) => {
   if (e == 1) {
-    deg += 90;
+    deg += 72;
   } else {
-    deg -= 90;
+    deg -= 72;
   }
   // console.log(deg)
   earth.style.transform = "rotate(" + -deg + "deg)";
