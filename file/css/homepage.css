@@ -1282,6 +1282,7 @@
   }
   .wrapper-layanan2 .content {
     text-align: center;
+    align-items: center;
   }
   .wrapper-layanan2 .content .title {
     font-size: 36px;
